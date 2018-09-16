@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/12 12:13:52 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/14 16:29:31 by jogomes          ###   ########.fr       */
+/*   Created: 2018/09/14 13:23:33 by jogomes           #+#    #+#             */
+/*   Updated: 2018/09/14 16:41:10 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char* s, int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
+	char *ptr;
+	int i;
 
-	while (*s && *s != (char) c)
-		s++;
-	if (*s != char c)
-		return (NULL);
-	else
-		return ((char*) s);
-}	
+	ptr = b;
 
+	i = 0;
+
+	while (i < len)
+	{
+		ptr[i] = c;
+		i++;
+	}
+	return (b);
+}

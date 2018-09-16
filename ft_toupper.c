@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/12 12:13:52 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/14 16:29:31 by jogomes          ###   ########.fr       */
+/*   Created: 2018/09/14 11:05:28 by jogomes           #+#    #+#             */
+/*   Updated: 2018/09/14 11:09:21 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char* s, int c)
+int		ft_toupper(int c)
 {
-
-	while (*s && *s != (char) c)
-		s++;
-	if (*s != char c)
-		return (NULL);
+	if ( c >= 97 && c <= 122)
+		return ( c - 32);
 	else
-		return ((char*) s);
-}	
-
+		return c;
+}
