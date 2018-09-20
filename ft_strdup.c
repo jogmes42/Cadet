@@ -6,9 +6,11 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/12 16:57:56 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/16 10:34:32 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/19 14:39:29 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include<stdlib.h>
 
 char	*ft_strdup(const char *s1)
 {
@@ -20,7 +22,7 @@ char	*ft_strdup(const char *s1)
 	while (s1[len])
 		len++;
 
-	ptr = (char *) malloc (len + 1);
+	ptr = (char *) malloc (sizeof(char) * len + 1);
 
 	i = 0;
 	

@@ -6,18 +6,17 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 13:23:33 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/14 16:41:10 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/19 14:36:38 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, int len)
 {
-	char *ptr;
 	int i;
-
-	ptr = b;
+	char *ptr;
 
 	i = 0;
+	ptr = b;
 
 	while (i < len)
 	{
