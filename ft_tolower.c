@@ -6,14 +6,14 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 11:05:28 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/14 11:14:45 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/21 11:48:57 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_tolower(int c)
 {
-	if ( c >= 65 && c <= 90)
-		return ( c + 32);
+	if (c >= 65 && c <= 90)
+		return (c + 32);
 	else
-		return c;
+		return (c);
 }

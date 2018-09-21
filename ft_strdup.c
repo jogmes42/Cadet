@@ -6,26 +6,23 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/12 16:57:56 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/19 14:39:29 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/21 13:39:33 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {
-	int	len;
-	int i;
-	char *ptr;
+	int		len;
+	int		i;
+	char	*ptr;
 
 	len = 0;
 	while (s1[len])
 		len++;
-
-	ptr = (char *) malloc (sizeof(char) * len + 1);
-
+	ptr = (char *)malloc(sizeof(char) * len + 1);
 	i = 0;
-	
 	while (i <= len)
 	{
 		ptr[i] = s1[i];
@@ -33,4 +30,3 @@ char	*ft_strdup(const char *s1)
 	}
 	return (ptr);
 }
-

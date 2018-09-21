@@ -6,18 +6,19 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 13:23:33 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/19 14:36:38 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/21 13:41:31 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, int len)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int i;
-	char *ptr;
+	size_t	i;
+	char	*ptr;
 
 	i = 0;
 	ptr = b;
-
 	while (i < len)
 	{
 		ptr[i] = c;

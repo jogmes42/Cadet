@@ -6,22 +6,20 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 17:25:42 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/11 17:35:36 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/21 11:43:05 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char* dst, char *src)
+char	*ft_strcpy(char *dst, char *src)
 {
 	int i;
 
 	i = 0;
-
 	while (src[i] != '\0')
 	{
 		dst[i] = src[i];
-			i++;
+		i++;
 	}
 	dst[i] = '\0';
-
 	return (dst);
 }
