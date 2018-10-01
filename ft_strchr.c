@@ -6,18 +6,18 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/12 12:13:52 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/21 11:39:57 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/26 13:04:51 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s && *s != c)
 		s++;
 	if (*s != c)
 		return (NULL);
 	else
-		return (s);
+		return ((char*)s);
 }

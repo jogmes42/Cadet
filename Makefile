@@ -6,7 +6,7 @@
 #    By: jogomes <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/26 13:14:29 by jogomes           #+#    #+#              #
-#    Updated: 2018/09/21 16:35:46 by jogomes          ###   ########.fr        #
+#    Updated: 2018/09/26 13:01:53 by jogomes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,3 +33,5 @@ fclean: clean
 	@/bin/rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: clean fclean re

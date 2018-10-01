@@ -6,11 +6,13 @@
 /*   By: jogomes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 17:25:42 by jogomes           #+#    #+#             */
-/*   Updated: 2018/09/21 11:43:05 by jogomes          ###   ########.fr       */
+/*   Updated: 2018/09/26 12:59:54 by jogomes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dst, char *src)
+#include "libft.h"
+
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;
 
